@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    &.underline {
+        &:after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 60px;
+            background-color: var(--bs-cyan);
+            margin: 12px auto 0;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quote {
+    font-size: 0.9rem;
+}
