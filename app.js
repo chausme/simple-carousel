@@ -79,3 +79,18 @@ prevBtn.addEventListener('click', () => {
     }
     showPerson(currentItem);
 });
+
+// show random person
+
+randomBtn.addEventListener('click', () => {
+    let randomIndex = getRandomIndex();
+    while (currentItem === randomIndex) {
+        randomIndex = getRandomIndex();
+    }
+    currentItem = randomIndex;
+    showPerson(randomIndex);
+});
+
+// get random review index
+
+const getRandomIndex = () => Math.floor(Math.random() * reviews.length);
