@@ -1,5 +1,5 @@
-# Simple Carousel
+# [Simple Carousel](https://simple-carousel.vercel.app/)
 
-Simple Carousel based on https://www.vanillajavascriptprojects.com/
+Simple Carousel based on [Vanilla Javacript Projects](https://www.vanillajavascriptprojects.com/)
 
-Images generated with https://thispersondoesnotexist.com/
+Images generated with [thispersondoesnotexist.com](https://thispersondoesnotexist.com/)
