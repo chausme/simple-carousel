@@ -44,12 +44,6 @@ const randomBtn = document.querySelector('.random-btn');
 
 let currentItem = 0;
 
-// load initial item
-
-window.addEventListener('DOMContentLoaded', () => {
-    showPerson(currentItem);
-});
-
 // show person based on item
 
 const showPerson = index => {
@@ -59,6 +53,16 @@ const showPerson = index => {
     job.textContent = item.job;
     info.textContent = item.info;
 };
+
+// get random review index
+
+const getRandomIndex = () => Math.floor(Math.random() * reviews.length);
+
+// load initial item
+
+window.addEventListener('DOMContentLoaded', () => {
+    showPerson(currentItem);
+});
 
 // show next person
 
@@ -90,7 +94,3 @@ randomBtn.addEventListener('click', () => {
     currentItem = randomIndex;
     showPerson(randomIndex);
 });
-
-// get random review index
-
-const getRandomIndex = () => Math.floor(Math.random() * reviews.length);
